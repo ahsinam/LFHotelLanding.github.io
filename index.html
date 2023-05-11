@@ -4,9 +4,339 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>LF Hotel Landing Page</title>
   </head>
   <body>
-    Header Page
+    <header>
+      <div class="container">
+        <nav class="flexBox">
+          <div class="icon hamburger"><i class="fa fa-bars"></i></div>
+          <img src="./image/Logo.svg" alt="Logo" />
+          <div class="navMenu flexBox">
+            <a href="">Home</a>
+            <a href="#services">Services</a>
+            <a href="">About us</a>
+            <a href="">Room</a>
+            <a href="">Contact</a>
+          </div>
+          <button class="bookButton">Book Now</button>
+        </nav>
+        <div class="flexBox headerContent">
+          <h1>Open the Door for a spacious living -</h1>
+          <div class="bookServicesWrapper columnFlexBox">
+            <div class="flexBox bottomLine">
+              <p>Book a hotel service</p>
+              <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="flexBox bottomLine">
+              <p>Book a hotel service</p>
+              <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="flexBox bottomLine">
+              <p>Book a hotel service</p>
+              <i class="fa fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="headerBanner" src="./image/headerBanner.svg" alt="" />
+    </header>
+    <section class="flexBox container" id="services">
+      <div class="facility flexBox">
+        <div class="facImage flexBox">
+          <img src="./image//icons/Coffee.svg" alt="Coffee" />
+        </div>
+
+        <p>Welcome Drinks</p>
+      </div>
+      <div class="facility flexBox">
+        <div class="facImage flexBox">
+          <img src="./image/icons/Car.svg" alt="Car" />
+        </div>
+
+        <p>Car Rental</p>
+      </div>
+      <div class="facility flexBox">
+        <div class="facImage flexBox">
+          <img src="./image/icons/bank.svg" alt="Spa" />
+        </div>
+
+        <p>Resort & Spa</p>
+      </div>
+      <div class="facility flexBox">
+        <div class="facImage flexBox">
+          <img src="./image/icons/Wifi.svg" alt="Wifi" />
+        </div>
+
+        <p>Free Wifi</p>
+      </div>
+    </section>
+    <section class="titleWrapper container">
+      <div class="columnFlexBox">
+        <h1>Why You Should <span>Stay Here</span></h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          voluptatibus eos. Asperiores Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
+    <section class="reasonsWrapper">
+      <div class="reasonContent">
+        <!-- reason 1     -->
+        <div class="reason">
+          <div class="number">1</div>
+          <h4>Provide the best choice of Room</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+            inventore?
+          </p>
+        </div>
+        <!-- reason 2     -->
+        <div class="reason">
+          <div class="number">2</div>
+          <h4>Provide the best choice of Room</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+            inventore?
+          </p>
+        </div>
+        <!-- reason 3     -->
+        <div class="reason">
+          <div class="number">3</div>
+          <h4>Provide the best choice of Room</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+            inventore?
+          </p>
+        </div>
+      </div>
+      <div class="picturesWrapper">
+        <div class="pictureComment">
+          <!-- <img src="./image/image1.svg" alt="" /> -->
+          <!-- Comment 1  -->
+          <div class="comments">
+            <img src="./image/pfp/pfp1.svg" alt="pfp1" />
+            <div class="personDetail">
+              <h6>Cody Fisher</h6>
+              <div class="rating">
+                <p>Given Rating</p>
+                <p class="rate">4.5</p>
+              </div>
+            </div>
+          </div>
+          <!-- Comment 2  -->
+          <div class="comments">
+            <img src="./image/pfp/pfp2.svg" alt="pfp1" />
+            <div class="personDetail">
+              <h6>Albert Flores</h6>
+              <div class="rating">
+                <p>Given Rating</p>
+                <p class="rate">4.5</p>
+              </div>
+            </div>
+          </div>
+          <!-- Comment 3  -->
+          <div class="comments">
+            <img src="./image/pfp/pfp3.svg" alt="pfp1" />
+            <div class="personDetail">
+              <h6>Devon Lane</h6>
+              <div class="rating">
+                <p>Given Rating</p>
+                <p class="rate">4.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="./image/imag2.svg" alt="Image" /> -->
+      </div>
+    </section>
+    <section class="roomChoices container">
+      <div class="roomDescWrapper columnFlexBox">
+        <h4>Our Room</h4>
+        <h1>A World of Choice</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo
+          suscipit maiores, amet accusantium ducimus.
+        </p>
+      </div>
+      <div class="roomPicWrapper flexBox">
+        <!-- First ko image haru ko lagi  -->
+        <div class="row1 columnFlexBox">
+          <div class="room">
+            <img src="./image/imag3.svg" alt="" />
+            <p>3 Guests</p>
+            <h4>Room with View</h4>
+          </div>
+          <div class="room">
+            <img src="./image/image4.svg" alt="" />
+            <p>1 Guest</p>
+            <h4>Small Room</h4>
+          </div>
+        </div>
+        <!-- Second ko image ko lagi  -->
+        <div class="row2 room">
+          <img src="./image/image5.svg" alt="" />
+          <p>6 Guests</p>
+          <h4>Luxury Room</h4>
+        </div>
+        <!-- Third ko image haru ko lagi  -->
+        <div class="row3 columnFlexBox">
+          <div class="room">
+            <img src="./image/image6.svg" alt="" />
+            <p>5 Guests</p>
+            <h4>Apartment</h4>
+          </div>
+          <div class="room">
+            <img src="./image/image7.svg" alt="" />
+            <p>4 Guests</p>
+            <h4>Medium Room</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutUs">
+      <div class="flexBox">
+        <div class="container">
+          <h1>About US</h1>
+          <div class="line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            tempora, blanditiis velit illo deleniti assumenda inventore
+            voluptates eius maxime porro.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
+            dolores.
+          </p>
+
+          <button>Explore</button>
+        </div>
+        <!-- <img src="./image/aboutusBanner.svg" alt="" /> -->
+      </div>
+    </section>
+
+    <section class="classroomWrapper">
+      <div class="flexBox">
+        <div class="interiorWrapper columnFlexBox">
+          <div class="classicroom columnFlexBox">
+            <h2>Class rooms and interior</h2>
+            <div class="starsWrapper">
+              <img src="./image/icons/Star.svg" alt="Review" />
+              <img src="./image/icons/Star.svg" alt="Review" />
+              <img src="./image/icons/Star.svg" alt="Review" />
+              <img src="./image/icons/Star.svg" alt="Review" />
+              <img src="./image/icons/Star.svg" alt="Review" />
+            </div>
+            <p>Excellent 500+ reviews</p>
+          </div>
+          <div class="photosWrapper">
+            <div class="photos">
+              <img src="./image/profile/profileImage1.svg" alt="" />
+              <img
+                class="mleft"
+                src="./image/profile/profileImage2.svg"
+                alt=""
+              />
+              <img
+                class="mleft"
+                src="./image/profile/profileImage3.svg"
+                alt=""
+              />
+              <img
+                class="mleft"
+                src="./image/profile/profileImage4.svg"
+                alt=""
+              />
+              <img
+                class="mleft"
+                src="./image/profile/profileImage5.svg"
+                alt=""
+              />
+            </div>
+            <p>People successfully got this dream place</p>
+          </div>
+        </div>
+        <div class="featuresWrapper">
+          <div class="restaurant">
+            <img src="./image/icons/restaurant.svg" alt="restaurant" />
+            <h4>Restaurant</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+              nobis hic voluptatem, repudiandae culpa ducimus?
+            </p>
+          </div>
+          <div class="restaurant">
+            <img src="./image/icons/wellness.svg" alt="restaurant" />
+            <h4>Wellness</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+              nobis hic voluptatem, repudiandae culpa ducimus?
+            </p>
+          </div>
+          <div class="restaurant">
+            <img src="./image/icons/bestRoom.svg" alt="restaurant" />
+            <h4>The best rooms</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+              nobis hic voluptatem, repudiandae culpa ducimus?
+            </p>
+          </div>
+          <div class="restaurant">
+            <img src="./image/icons/loungeBar.svg" alt="restaurant" />
+            <h4>Lounge Bar</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+              nobis hic voluptatem, repudiandae culpa ducimus?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="linksWrapper">
+          <div class="quickLinks">
+            <h6>Quick Links</h6>
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="infoWrapper">
+            <h5>Get in touch</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              nostrum.
+            </p>
+            <div class="subsribeButton">
+              <input type="email" placeholder="Enter email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <div class="useful">
+            <h6>Useful</h6>
+            <a href="">Privacy Policy</a>
+            <a href="">Legal</a>
+            <a href="">FAQ</a>
+            <a href="">Blogs</a>
+          </div>
+        </div>
+        <div class="footerIcons">
+          <p>Copyright goes to -Breakdance.com</p>
+          <div class="socialIcons">
+            <img src="./image/socials/twitter.svg" alt="Twitter" />
+            <img src="./image/socials/youtube.svg" alt="Youtube" />
+            <img src="./image/socials/facebook.svg" alt="Facebook" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

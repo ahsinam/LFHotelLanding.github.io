@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF7500;
+    --secondary-color: #121212;
+    --tertiary-color: #FFFFFF;
+    --normal-text-color: #565656;
+    --black-shade: #292929;
+    --seconday-text-color: #A9A9A9
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columnFlexBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 16px;
+}
+
+/* Header  */
+header {
+    background-color: black;
+    color: white;
+}
+
+.navMenu {
+    display: none;
+}
+
+.bookButton {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    padding: 8px 4px;
+}
+
+.headerContent {
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.headerContent h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.bookServicesWrapper {
+    display: none;
+}
+
+.headerBanner {
+    width: 100%;
+}
+
+/* Services  */
+#services .flexBox {
+    gap: 3px;
+}
+
+.facility .flexBox {
+    justify-content: center;
+}
+
+.facImage {
+    background-color: rgba(255, 117, 0, 0.05);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.facility img {
+    width: 30px;
+    height: 30px;
+}
+
+.facility p {
+    color: var(--normal-text-color);
+    font-size: 12px;
+    max-width: 45px;
+}
+
+/* Title  */
+.titleWrapper .columnFlexBox {
+    align-items: center;
+}
+
+.titleWrapper h1 span {
+    color: var(--primary-color);
+}
+
+.titleWrapper p {
+    max-width: 230px;
+    text-align: center
+}
+
+/* Our room  */
+
+
+.roomChoices .columnFlexBox {
+    align-items: center;
+}
+
+.roomDescWrapper h1 {
+    margin: 8px;
+}
+
+.roomChoices .flexBox {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.roomPicWrapper {
+    margin: 30px 0 60px
+}
+
+.roomPicWrapper .columnFlexBox {
+    gap: 12px;
+}
+
+.roomPicWrapper p {
+    color: var(--seconday-text-color);
+    margin: 8px 0 2px;
+}
+
+.roomPicWrapper h4 {
+    color: var(--black-shade);
+
+}
+
+.roomPicWrapper .row2 img {
+    width: 320px;
+}
+
+.row1,
+.row2,
+.row3 {
+    text-align: center;
+}
+
+
+.room {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* About US  */
+.aboutUs {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.aboutUs .flexBox {
+    flex-direction: column;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+/* Classic rooms and interios  */
+.classroomWrapper .flexBox {
+    flex-direction: column;
+}
+
+.classroomWrapper .columnFlexBox {
+    gap: 30px;
+}
+
+.interiorWrapper .columnFlexBox {
+    align-items: center;
+    gap: 5px;
+}
+
+
+.photos .mleft {
+    margin-left: -18px;
+}
+
+
+@media (min-width: 481px) {
+    .container {
+        padding: 32px
+    }
+
+    /* header  */
+    .hamburger {
+        display: none;
+    }
+
+    .navMenu {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .bookButton {
+        padding: 8px 24px;
+    }
+
+    .headerContent {
+        padding: 75px 0 110px;
+    }
+
+    .headerContent h1 {
+        font-size: 36px;
+        max-width: 400px;
+    }
+
+    .bookServicesWrapper {
+        display: flex;
+        gap: 16px;
+    }
+
+    .bookServicesWrapper .flexBox {
+        gap: 72px;
+    }
+
+
+    .bottomLine {
+        padding: 8px;
+        border-bottom: 1px solid var(--tertiary-color);
+    }
+
+    /* Services  */
+    .facImage {
+        padding: 13px;
+    }
+
+    .facImage img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .facility p {
+        font-size: 16px;
+    }
+
+    #services .flexBox {
+        gap: 15px;
+    }
+
+    /* Title  */
+    .titleWrapper h1 {
+        font-size: 46px;
+    }
+
+    .titleWrapper p {
+        font-size: 16px;
+        max-width: 475px;
+    }
+
+    /* Rooms  */
+
+    .roomPicWrapper p {
+        font-size: 14px;
+    }
+
+    .roomPicWrapper h4 {
+        font-size: 22px;
+    }
+
+    .roomPicWrapper .columnFlexBox {
+        flex-direction: row;
+    }
+
+    .roomPicWrapper .row2 img {
+        width: 100%;
+    }
+
+    .room {
+        border: none;
+    }
+
+    .row1,
+    .row2,
+    .row3 {
+        text-align: start;
+    }
+
+
+}
+
+@media (min-width:769px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav {
+        padding: 60px 0 0;
+    }
+
+    .navMenu {
+        gap: 44px;
+    }
+
+    .bookButton {
+        padding: 14px 48px;
+    }
+
+    /* Services  */
+    #services {
+        margin-top: 64px;
+    }
+
+
+    .facility img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .facility p {
+        font-size: 16px;
+    }
+
+    /* Title  */
+    .titleWrapper {
+        margin-top: 140px;
+    }
+
+    /* Our Room  */
+    .roomChoices .flexBox {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .roomChoices .columnFlexBox {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (min-width:1280px) {}
