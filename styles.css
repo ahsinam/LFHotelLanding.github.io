@@ -139,6 +139,10 @@ header {
     width: 30px;
 }
 
+.number p {
+    color: var(--seconday-text-color);
+}
+
 .comments.flexBox {
     gap: 8px;
     margin: 12px;
@@ -152,6 +156,9 @@ header {
 }
 
 /* Our room  */
+.roomDescWrapper h1 span {
+    color: var(--primary-color);
+}
 
 .roomChoices .columnFlexBox {
     align-items: center;
@@ -345,6 +352,28 @@ footer .container .smallScreenWrapper.columnFlexBox {
 .footerIcons .flexBox {
     gap: 12px;
 }
+
+/* All Hover effects  */
+.navMenu :hover {
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.roomPicWrapper img:hover {
+    transform: scale(1.35);
+}
+
+.photos img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgb(43, 14, 232);
+}
+
+.featureBanner :hover {
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.12);
+}
+
+
 
 
 @media (min-width: 481px) {
@@ -562,9 +591,39 @@ footer .container .smallScreenWrapper.columnFlexBox {
         margin-top: 140px;
     }
 
+    .titleWrapper p {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
     /* Reason Wrapper  */
+    .reasonContent.columnFlexBox {
+        gap: 70px;
+    }
+
+    .number.flexBox img {
+        width: 50px;
+    }
+
+    .reason.columnFlexBox {
+        gap: 14px;
+    }
+
     .picturesWrapper .hiddenImg {
         display: block
+    }
+
+    .number.flexBox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .number h4 {
+        font-size: 22px;
+    }
+
+    .number p {
+        font-size: 16px;
     }
 
     .comments.flexBox {
@@ -613,6 +672,24 @@ footer .container .smallScreenWrapper.columnFlexBox {
 
     /* Our Room  */
 
+    .roomChoices {
+        margin-top: 120px;
+    }
+
+    .roomChoices h3 {
+        font-size: 24px;
+    }
+
+    .roomChoices h1 {
+        font-size: 46px;
+    }
+
+    .roomChoices p {
+        font-size: 16px;
+        max-width: 475px;
+        text-align: start;
+    }
+
     .roomChoices .flexBox {
         flex-direction: row;
         gap: 0;
@@ -620,6 +697,7 @@ footer .container .smallScreenWrapper.columnFlexBox {
 
     .roomChoices .columnFlexBox {
         flex-direction: column;
+        gap: 16px;
     }
 
     /* About US  */
