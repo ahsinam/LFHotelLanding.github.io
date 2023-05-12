@@ -10,7 +10,8 @@
     --tertiary-color: #FFFFFF;
     --normal-text-color: #565656;
     --black-shade: #292929;
-    --seconday-text-color: #A9A9A9
+    --seconday-text-color: #A9A9A9;
+    --paragraph-color: #88888
 }
 
 a {
@@ -108,8 +109,42 @@ header {
     text-align: center
 }
 
-/* Our room  */
+/* Reason Wrapper  */
+.reasonsWrapper.flexBox {
+    flex-direction: column;
+}
 
+.reasonContent.columnFlexBox {
+    gap: 30px;
+}
+
+.picturesWrapper .hiddenImg {
+    display: none;
+}
+
+.reason.columnFlexBox,
+.number.flexBox {
+    gap: 10px;
+}
+
+.number.flexBox {
+    justify-content: flex-start;
+}
+
+.number.flexBox img {
+    width: 30px;
+}
+
+.comments.flexBox {
+    gap: 8px;
+    margin: 12px;
+}
+
+.personDetail p {
+    font-size: 12px;
+}
+
+/* Our room  */
 
 .roomChoices .columnFlexBox {
     align-items: center;
@@ -163,9 +198,6 @@ header {
     color: white;
 }
 
-.aboutUs .flexBox {
-    flex-direction: column;
-}
 
 .line {
     width: 100px;
@@ -173,23 +205,141 @@ header {
     background-color: var(--primary-color);
 }
 
-/* Classic rooms and interios  */
-.classroomWrapper .flexBox {
+.aboutBanner.flexBox {
     flex-direction: column;
 }
 
-.classroomWrapper .columnFlexBox {
-    gap: 30px;
+.about.columnFlexBox button {
+    margin-top: 20px;
+    padding: 7px 22px;
+    background-color: Var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: white;
 }
 
-.interiorWrapper .columnFlexBox {
+.about.columnFlexBox {
     align-items: center;
+}
+
+.about.columnFlexBox .line {
+    margin: 8px 0 20px;
+}
+
+.about.columnFlexBox p {
+    color: var(--paragraph-color);
+    margin-bottom: 12px;
+}
+
+
+
+
+
+/* Classic rooms and interios  */
+.outer.flexBox {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.interiorWrapper.columnFlexBox {
+    text-align: center;
+    gap: 32px;
+}
+
+.classicroom.columnFlexBox {
+    gap: 16px;
+}
+
+.reviewBanner.columnFlexBox {
     gap: 5px;
 }
 
+.mleft {
+    margin-left: -20px;
+}
 
-.photos .mleft {
-    margin-left: -18px;
+.fWrapper.flexBox {
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.featuresWrapper.columnFlexBox,
+.featureBanner.flexBox {
+    gap: 10px;
+}
+
+.feature.columnFlexBox {
+    gap: 5px;
+}
+
+.featureBanner.flexBox {
+    flex-direction: column;
+}
+
+/* Footer  */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+footer a {
+    font-size: 12px;
+}
+
+.smallScreenWrapper {
+    text-align: center;
+}
+
+.smallScreenWrapper p {
+    color: var(--paragraph-color);
+    margin: 8px 0;
+}
+
+footer .container .smallScreenWrapper.columnFlexBox {
+    align-items: center;
+}
+
+.subsribeButton {
+    border-radius: 4px;
+}
+
+.subsribeButton input,
+.subsribeButton button {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+}
+
+.subsribeButton input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.subsribeButton button {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--primary-color);
+}
+
+.linksWrapper {
+    margin: 24px 0;
+}
+
+.linksWrapper .infoWrapper {
+    display: none;
+}
+
+.linksWrapper h6 {
+    margin-bottom: 12px;
+}
+
+.linksWrapper .columnFlexBox {
+    gap: 8px;
+}
+
+
+.footerIcons .flexBox {
+    gap: 12px;
 }
 
 
@@ -265,7 +415,12 @@ header {
         max-width: 475px;
     }
 
-    /* Rooms  */
+    /* Reason Wrapper  */
+    .reasonsWrapper.flexBox {
+        flex-direction: row;
+    }
+
+    /* Our Rooms  */
 
     .roomPicWrapper p {
         font-size: 14px;
@@ -293,6 +448,76 @@ header {
         text-align: start;
     }
 
+    /* About us  */
+    .aboutBanner.flexBox {
+        flex-direction: row;
+    }
+
+    .about.columnFlexBox {
+        width: 400px;
+    }
+
+    .about.columnFlexBox .aboutUs .about {
+        align-items: flex-start;
+    }
+
+    .aboutUs .about p {
+        width: 320px;
+    }
+
+    .aboutBanner.flexBox img {
+        width: calc(100% - 320px);
+        overflow: hidden;
+    }
+
+
+
+    /* .aboutBanner img {
+        margin-top: 0;
+    } */
+
+    /* Classic rooms and interios  */
+    .outer.flexBox {
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .featuresWrapper.columnFlexBox {
+        max-width: 350px;
+    }
+
+
+
+    /* Footer  */
+    .smallScreenWrapper {
+        display: none;
+    }
+
+    .linksWrapper .infoWrapper {
+        display: block;
+        max-width: 250px;
+    }
+
+    .infoWrapper {
+        text-align: center;
+    }
+
+    .infoWrapper p {
+        margin: 6px 0 32px;
+    }
+
+    .footerIcons {
+        margin-top: 65px;
+    }
+
+    .footerIcons.flexBox {
+        justify-content: flex-end;
+        gap: 150px;
+    }
+
+    .subsribeButton.flexBox {
+        justify-content: center;
+    }
 
 }
 
@@ -345,6 +570,112 @@ header {
         flex-direction: column;
     }
 
+    /* About US  */
+    .aboutBanner img {
+        float: left;
+        width: unset;
+        height: unset;
+    }
+
+    .aboutUs .about {
+        max-width: inherit;
+    }
+
+    .about h1 {
+        font-size: 46px;
+    }
+
+    .about.columnFlexBox .line {
+        margin: 16px 0 40px;
+    }
+
+    .about p {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .aboutBanner button {
+        margin-top: 40px;
+    }
+
+    /* Classic rooms and interios  */
+    .interiorWrapper.columnFlexBox {
+        text-align: start;
+    }
+
+    .featuresWrapper.columnFlexBox {
+        max-width: 714px;
+        flex-direction: row;
+    }
+
+    .fWrapper.flexBox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature.columnFlexBox {
+        padding: 24px;
+    }
+
+    .fWrapper h4 {
+        margin: 16px 0 14px;
+    }
+
+    /* Footer  */
+    .linksWrapper {
+        padding-top: 50px;
+    }
+
+    .footerIcons {
+        padding-bottom: 40px;
+    }
+
+    .footerIcons.flexBox {
+        gap: 350px;
+    }
+
+    .socialIcons.flexBox {
+        gap: 24px;
+    }
+
+    footer h6 {
+        font-size: 22px;
+    }
+
+    .quickLinks a,
+    .useful a {
+        font-size: 16px
+    }
+
+    .infoWrapper {
+        max-width: 360px;
+    }
+
+    .subsribeButton {
+        width: 100%;
+    }
+
+    .subsribeButton input {
+        padding: 19px 20px;
+        border: 1.5px solid white;
+        background-color: var(--secondary-color);
+        color: white;
+        border-radius: 6px;
+    }
+
+    .subsribeButton button {
+        padding: 19px 25px;
+        border: 1.5px solid white;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 6px;
+        margin-left: -12px;
+    }
+
+
+    .subsribeButton {
+        width: 100%;
+    }
 
 }
 

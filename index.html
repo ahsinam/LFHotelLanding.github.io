@@ -85,30 +85,36 @@
         </p>
       </div>
     </section>
-    <section class="reasonsWrapper">
-      <div class="reasonContent">
+    <section class="reasonsWrapper flexBox container">
+      <div class="reasonContent columnFlexBox">
         <!-- reason 1     -->
-        <div class="reason">
-          <div class="number">1</div>
-          <h4>Provide the best choice of Room</h4>
+        <div class="reason columnFlexBox">
+          <div class="number flexBox">
+            <img src="./image/num/num1.svg" alt="" />
+            <h4>Provide the best choice of Room</h4>
+          </div>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
             inventore?
           </p>
         </div>
         <!-- reason 2     -->
-        <div class="reason">
-          <div class="number">2</div>
-          <h4>Provide the best choice of Room</h4>
+        <div class="reason columnFlexBox">
+          <div class="number flexBox">
+            <img src="./image/num/num2.svg" alt="" />
+            <h4>Provide the best choice of Room</h4>
+          </div>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
             inventore?
           </p>
         </div>
         <!-- reason 3     -->
-        <div class="reason">
-          <div class="number">3</div>
-          <h4>Provide the best choice of Room</h4>
+        <div class="reason columnFlexBox">
+          <div class="number flexBox">
+            <img src="./image/num/num3.svg" alt="" />
+            <h4>Provide the best choice of Room</h4>
+          </div>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
             inventore?
@@ -117,47 +123,39 @@
       </div>
       <div class="picturesWrapper">
         <div class="pictureComment">
-          <!-- <img src="./image/image1.svg" alt="" /> -->
+          <img class="hiddenImg" src="./image/image1.svg" alt="" />
           <!-- Comment 1  -->
-          <div class="comments">
+          <div class="comments flexBox">
             <img src="./image/pfp/pfp1.svg" alt="pfp1" />
             <div class="personDetail">
-              <h6>Cody Fisher</h6>
-              <div class="rating">
-                <p>Given Rating</p>
-                <p class="rate">4.5</p>
-              </div>
+              <h5>Cody Fisher</h5>
+              <p>Given Rating <span> 4.5</span></p>
             </div>
           </div>
           <!-- Comment 2  -->
-          <div class="comments">
+          <div class="comments flexBox">
             <img src="./image/pfp/pfp2.svg" alt="pfp1" />
             <div class="personDetail">
-              <h6>Albert Flores</h6>
-              <div class="rating">
-                <p>Given Rating</p>
-                <p class="rate">4.5</p>
-              </div>
+              <h5>Albert Flores</h5>
+              <p>Given Rating <span> 4.5</span></p>
             </div>
           </div>
           <!-- Comment 3  -->
-          <div class="comments">
+          <div class="comments flexBox">
             <img src="./image/pfp/pfp3.svg" alt="pfp1" />
             <div class="personDetail">
-              <h6>Devon Lane</h6>
-              <div class="rating">
-                <p>Given Rating</p>
-                <p class="rate">4.5</p>
-              </div>
+              <h5>Devon Lane</h5>
+              <p>Given Rating <span> 4.5</span></p>
             </div>
           </div>
         </div>
-        <!-- <img src="./image/imag2.svg" alt="Image" /> -->
+        <img class="hiddenImg" src="./image/headerBanner.svg" alt="Image" />
       </div>
     </section>
+
     <section class="roomChoices container">
       <div class="roomDescWrapper columnFlexBox">
-        <h4>Our Room</h4>
+        <h3>Our Room</h3>
         <h1>A World of Choice</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo
@@ -201,14 +199,13 @@
     </section>
 
     <section class="aboutUs">
-      <div class="flexBox">
-        <div class="container">
+      <div class="aboutBanner flexBox">
+        <div class="container about columnFlexBox">
           <h1>About US</h1>
           <div class="line"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             tempora, blanditiis velit illo deleniti assumenda inventore
-            voluptates eius maxime porro.
           </p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
@@ -217,23 +214,25 @@
 
           <button>Explore</button>
         </div>
-        <!-- <img src="./image/aboutusBanner.svg" alt="" /> -->
+        <img src="./image/aboutusBanner.svg" alt="" />
       </div>
     </section>
 
     <section class="classroomWrapper">
-      <div class="flexBox">
+      <div class="outer flexBox container">
         <div class="interiorWrapper columnFlexBox">
           <div class="classicroom columnFlexBox">
             <h2>Class rooms and interior</h2>
-            <div class="starsWrapper">
-              <img src="./image/icons/Star.svg" alt="Review" />
-              <img src="./image/icons/Star.svg" alt="Review" />
-              <img src="./image/icons/Star.svg" alt="Review" />
-              <img src="./image/icons/Star.svg" alt="Review" />
-              <img src="./image/icons/Star.svg" alt="Review" />
+            <div class="reviewBanner columnFlexBox">
+              <div class="starsWrapper">
+                <img src="./image/icons/Star.svg" alt="Review" />
+                <img src="./image/icons/Star.svg" alt="Review" />
+                <img src="./image/icons/Star.svg" alt="Review" />
+                <img src="./image/icons/Star.svg" alt="Review" />
+                <img src="./image/icons/Star.svg" alt="Review" />
+              </div>
+              <p>Excellent 500+ reviews</p>
             </div>
-            <p>Excellent 500+ reviews</p>
           </div>
           <div class="photosWrapper">
             <div class="photos">
@@ -262,38 +261,50 @@
             <p>People successfully got this dream place</p>
           </div>
         </div>
-        <div class="featuresWrapper">
-          <div class="restaurant">
-            <img src="./image/icons/restaurant.svg" alt="restaurant" />
-            <h4>Restaurant</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-              nobis hic voluptatem, repudiandae culpa ducimus?
-            </p>
+        <div class="featuresWrapper columnFlexBox">
+          <div class="featureBanner flexBox">
+            <div class="feature columnFlexBox">
+              <div class="fWrapper flexBox">
+                <img src="./image/icons/restaurant.svg" alt="restaurant" />
+                <h4>Restaurant</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                nobis hic voluptatem, repudiandae culpa ducimus?
+              </p>
+            </div>
+            <div class="feature columnFlexBox">
+              <div class="fWrapper flexBox">
+                <img src="./image/icons/wellness.svg" alt="restaurant" />
+                <h4>Wellness</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                nobis hic voluptatem, repudiandae culpa ducimus?
+              </p>
+            </div>
           </div>
-          <div class="restaurant">
-            <img src="./image/icons/wellness.svg" alt="restaurant" />
-            <h4>Wellness</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-              nobis hic voluptatem, repudiandae culpa ducimus?
-            </p>
-          </div>
-          <div class="restaurant">
-            <img src="./image/icons/bestRoom.svg" alt="restaurant" />
-            <h4>The best rooms</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-              nobis hic voluptatem, repudiandae culpa ducimus?
-            </p>
-          </div>
-          <div class="restaurant">
-            <img src="./image/icons/loungeBar.svg" alt="restaurant" />
-            <h4>Lounge Bar</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-              nobis hic voluptatem, repudiandae culpa ducimus?
-            </p>
+          <div class="featureBanner flexBox">
+            <div class="feature columnFlexBox">
+              <div class="fWrapper flexBox">
+                <img src="./image/icons/bestRoom.svg" alt="restaurant" />
+                <h4>The best rooms</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                nobis hic voluptatem, repudiandae culpa ducimus?
+              </p>
+            </div>
+            <div class="feature columnFlexBox">
+              <div class="fWrapper flexBox">
+                <img src="./image/icons/loungeBar.svg" alt="restaurant" />
+                <h4>Lounge Bar</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                nobis hic voluptatem, repudiandae culpa ducimus?
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -301,36 +312,51 @@
 
     <footer>
       <div class="container">
-        <div class="linksWrapper">
+        <div class="smallScreenWrapper columnFlexBox">
+          <h5>Get in touch</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            nostrum.
+          </p>
+          <div class="subsribeButton flexBox">
+            <input type="email" placeholder="Enter email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+        <div class="linksWrapper flexBox">
           <div class="quickLinks">
             <h6>Quick Links</h6>
-            <a href="">Home</a>
-            <a href="">Services</a>
-            <a href="">About Us</a>
-            <a href="">Contact</a>
+            <div class="columnFlexBox">
+              <a href="">Home</a>
+              <a href="">Services</a>
+              <a href="">About Us</a>
+              <a href="">Contact</a>
+            </div>
           </div>
-          <div class="infoWrapper">
-            <h5>Get in touch</h5>
+          <div class="infoWrapper columnFlexBox">
+            <h6>GET IN TOUCH</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               nostrum.
             </p>
-            <div class="subsribeButton">
+            <div class="subsribeButton flexBox">
               <input type="email" placeholder="Enter email" />
               <button>Subscribe</button>
             </div>
           </div>
           <div class="useful">
             <h6>Useful</h6>
-            <a href="">Privacy Policy</a>
-            <a href="">Legal</a>
-            <a href="">FAQ</a>
-            <a href="">Blogs</a>
+            <div class="columnFlexBox">
+              <a href="">Privacy Policy</a>
+              <a href="">Legal</a>
+              <a href="">FAQ</a>
+              <a href="">Blogs</a>
+            </div>
           </div>
         </div>
-        <div class="footerIcons">
+        <div class="footerIcons flexBox">
           <p>Copyright goes to -Breakdance.com</p>
-          <div class="socialIcons">
+          <div class="socialIcons flexBox">
             <img src="./image/socials/twitter.svg" alt="Twitter" />
             <img src="./image/socials/youtube.svg" alt="Youtube" />
             <img src="./image/socials/facebook.svg" alt="Facebook" />
