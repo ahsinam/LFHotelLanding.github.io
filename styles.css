@@ -360,6 +360,12 @@ footer .container .smallScreenWrapper.columnFlexBox {
     border-radius: 6px;
 }
 
+.facImage img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #FF7500;
+    transform: scale(1.5);
+}
+
 .roomPicWrapper img:hover {
     transform: scale(1.35);
 }
