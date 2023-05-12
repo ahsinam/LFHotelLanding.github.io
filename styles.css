@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .flexBox {
     display: flex;
     justify-content: space-between;
@@ -138,6 +142,9 @@ header {
 .comments.flexBox {
     gap: 8px;
     margin: 12px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 14px 10px;
 }
 
 .personDetail p {
@@ -210,7 +217,7 @@ header {
 }
 
 .about.columnFlexBox button {
-    margin-top: 20px;
+    margin: 20px 0px;
     padding: 7px 22px;
     background-color: Var(--primary-color);
     border-radius: 50px;
@@ -230,9 +237,6 @@ header {
     color: var(--paragraph-color);
     margin-bottom: 12px;
 }
-
-
-
 
 
 /* Classic rooms and interios  */
@@ -454,7 +458,7 @@ footer .container .smallScreenWrapper.columnFlexBox {
     }
 
     .about.columnFlexBox {
-        width: 400px;
+        align-items: flex-start;
     }
 
     .about.columnFlexBox .aboutUs .about {
@@ -467,14 +471,9 @@ footer .container .smallScreenWrapper.columnFlexBox {
 
     .aboutBanner.flexBox img {
         width: calc(100% - 320px);
-        overflow: hidden;
     }
 
 
-
-    /* .aboutBanner img {
-        margin-top: 0;
-    } */
 
     /* Classic rooms and interios  */
     .outer.flexBox {
@@ -545,6 +544,9 @@ footer .container .smallScreenWrapper.columnFlexBox {
         margin-top: 64px;
     }
 
+    .reasonsWrapper {
+        margin-top: 40px;
+    }
 
     .facility img {
         width: 48px;
@@ -560,7 +562,57 @@ footer .container .smallScreenWrapper.columnFlexBox {
         margin-top: 140px;
     }
 
+    /* Reason Wrapper  */
+    .picturesWrapper .hiddenImg {
+        display: block
+    }
+
+    .comments.flexBox {
+        justify-content: flex-start;
+    }
+
+    .picturesWrapper {
+        position: relative;
+    }
+
+    .picturesWrapper img:nth-child(2) {
+        width: 439px;
+        height: 219px;
+        object-fit: cover;
+        position: absolute;
+        top: 209px;
+        margin-left: -150px;
+    }
+
+    .comments.flexBox {
+        margin: 0;
+        box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+    }
+
+    .personDetail {
+        margin-right: 62px;
+    }
+
+    .comment1 {
+        position: absolute;
+        top: -30px;
+        left: 90px;
+    }
+
+    .comment2 {
+        position: absolute;
+        top: 115px;
+        left: -120px;
+    }
+
+    .comment3 {
+        position: absolute;
+        left: 80px;
+        bottom: -30px;
+    }
+
     /* Our Room  */
+
     .roomChoices .flexBox {
         flex-direction: row;
         gap: 0;
@@ -571,10 +623,16 @@ footer .container .smallScreenWrapper.columnFlexBox {
     }
 
     /* About US  */
-    .aboutBanner img {
-        float: left;
-        width: unset;
-        height: unset;
+    .aboutUs {
+        background: linear-gradient(90deg, rgba(0, 0, 0) 60%, transparent 50%), url('./image/aboutusBanner.svg');
+    }
+
+    .about {
+        padding: 150px 0;
+    }
+
+    .aboutBanner.flexBox img {
+        display: none;
     }
 
     .aboutUs .about {
@@ -597,6 +655,18 @@ footer .container .smallScreenWrapper.columnFlexBox {
     .aboutBanner button {
         margin-top: 40px;
     }
+
+    .aboutBanner.flexBox img {
+        width: calc(100% - 900px);
+        overflow: hidden;
+    }
+
+    .featuresWrapper {
+        margin-top: -64px;
+        background-color: var(--tertiary-color);
+    }
+
+
 
     /* Classic rooms and interios  */
     .interiorWrapper.columnFlexBox {
@@ -672,11 +742,14 @@ footer .container .smallScreenWrapper.columnFlexBox {
         margin-left: -12px;
     }
 
-
     .subsribeButton {
         width: 100%;
     }
 
 }
 
-@media (min-width:1280px) {}
+@media (min-width:1280px) {
+
+    /* About  */
+
+}
