@@ -390,7 +390,7 @@ footer .container .smallScreenWrapper.columnFlexBox {
     box-shadow: 0 0 0 2px rgb(43, 14, 232);
 }
 
-.featureBanner :hover {
+.feature:hover {
     box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.12);
 }
 
